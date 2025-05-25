@@ -36,6 +36,7 @@ void GameInteractor_ExecuteOnEnemyDefeat(void* actor);
 void GameInteractor_ExecuteOnBossDefeat(void* actor);
 void GameInteractor_ExecuteOnTimestamp(u8 item);
 void GameInteractor_ExecuteOnPlayerBonk();
+void GameInteractor_ExecuteOnPlayerDamage(int16_t amount);
 void GameInteractor_ExecuteOnPlayerHealthChange(int16_t amount);
 void GameInteractor_ExecuteOnPlayerBottleUpdate(int16_t contents);
 void GameInteractor_ExecuteOnPlayerHoldUpShield();

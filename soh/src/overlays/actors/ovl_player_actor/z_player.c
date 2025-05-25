@@ -4496,6 +4496,8 @@ void Player_SetInvulnerability(Player* this, s32 timer) {
 }
 
 s32 func_80837B18_modified(PlayState* play, Player* this, s32 damage, u8 modified) {
+    GameInteractor_ExecuteOnPlayerDamage(damage);
+
     if ((this->invincibilityTimer != 0) || (this->actor.category != ACTORCAT_PLAYER)) {
         return 1;
     }
